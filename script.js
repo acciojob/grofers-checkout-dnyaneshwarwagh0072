@@ -15,7 +15,8 @@ const getSumBtn = document.createElement("button");
             // Create a new row for the total price
             const totalRow = document.createElement('tr');
             const totalCell = document.createElement('td');
-            totalCell.setAttribute('colspan', '2'); // Span across all columns
+			totalCell.id = "ans";
+            totalCell.setAttribute('colspan', '2'); 
             totalCell.textContent = 'Total Price: ' + totalPrice;
 
             // Append the total price row to the table
